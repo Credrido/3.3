@@ -1,4 +1,8 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace _3_3
 {
@@ -12,7 +16,7 @@ namespace _3_3
 
             Console.WriteLine("Хотите заполнить массивы сами? Введите Да или Нет");
 
-            if(Console.ReadLine() == "Да")
+            if (Console.ReadLine() == "Да")
             {
                 randif = true;
             }
@@ -30,6 +34,34 @@ namespace _3_3
                 array.Print();
                 array.Getmiddle();
             }
+
+
+            Console.WriteLine();
+            Console.WriteLine("Доп для одномерных:");
+            Onedimensional array1 = new Onedimensional(randif);
+            IDeleteBigger100 Delete = array1;
+            Delete.DeleteBigger100();
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Доп для двумерных:");
+            Twodimensional array2 = new Twodimensional(randif);
+            IPrintSnake Snake = array2;
+            Snake.SnakePrint();
+
+            IPrinter[] arraysP = new IPrinter[4];
+
+            arraysP[0] = new DaysOfWeek();
+            arraysP[1] = new Onedimensional(randif);
+            arraysP[2] = new Twodimensional(randif);
+            arraysP[3] = new Uneven(randif);
+
+            foreach(IPrinter arr in arraysP)
+            {
+                arr.Print();
+            }
+
         }
     }
 }
