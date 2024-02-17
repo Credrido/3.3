@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -81,6 +81,8 @@ namespace _3_3
 
         public override void Print()
         {
+            Console.WriteLine("Итоги двумерного массива");
+            Console.WriteLine();
             Console.WriteLine("Исходный массив:");
 
             for (int i = 0; i < array.GetLength(0); i++)
