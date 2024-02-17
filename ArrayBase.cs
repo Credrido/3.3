@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3_3
 {
-    public abstract class ArrayBase :IArrayBase
+    public abstract class ArrayBase :IArrayBase, IPrinter
     {
         public ArrayBase(bool randif)
         {
