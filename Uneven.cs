@@ -108,6 +108,8 @@ namespace _3_3
 
         public override void Print()
         {
+            Console.WriteLine("Итоги неровного массива");
+            Console.WriteLine();
             Console.WriteLine("Исходный массив:");
 
             for (int i = 0; i < array.Length; i++)
@@ -118,6 +120,8 @@ namespace _3_3
                 }
                 Console.WriteLine();
             }
+
+            Console.WriteLine();
         }
     }
 }
