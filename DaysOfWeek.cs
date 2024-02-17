@@ -11,6 +11,7 @@ namespace _3_3
         void IPrinter.Print()
         {
             Console.WriteLine("Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье");
+            Console.WriteLine();
         }
     }
 }
